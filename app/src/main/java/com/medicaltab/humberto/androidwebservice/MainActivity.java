@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnConsulta:
-                int i=0;
                 String Usuario=edUsuario.getText().toString();
                 String Pass= edPass.getText().toString();
                 //Consumir el WebService requiere de operaciones de red, esto se debe hacer
@@ -110,13 +109,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         } catch (IOException e) {
             e.printStackTrace();
-            Resultado+="Error de Login ";
+            Resultado+="Error de Login "+e.toString();
         } catch (XmlPullParserException e) {
             e.printStackTrace();
-            Resultado+="Error de Login ";
+            Resultado+="Error de Login "+e.toString();
         } catch (JSONException e) {
             e.printStackTrace();
-            Resultado+="Error de Login ";
+            Resultado+="Error de Login "+e.toString();
         }
         return Resultado;
     }
