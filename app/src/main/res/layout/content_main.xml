@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.medicaltab.humberto.androidwebservice.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consumo de un WebService en Android"
+        android:textSize="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usando el WebService del ejemplo https://github.com/humbertocg/WebServiceSOAP_MySQL se hara una consulta al webservice y se mostrara el resultado a continuación"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:linksClickable="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edUsuario"
+        android:layout_gravity="center_horizontal"
+        android:hint="Usuario"
+        android:fontFamily="sans-serif-condensed" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edPass"
+        android:hint="Contraseña"
+        android:fontFamily="sans-serif-condensed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/btnConsulta"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/txtResultado"
+        android:linksClickable="true" />
+
+
+</LinearLayout>
